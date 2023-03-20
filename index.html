@@ -1,0 +1,64 @@
+<!-- 모든 첫 페이지는 index이다 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <title> 이름 - KAIST </title>
+    <!-- 제목 옆에 붙는 아이콘을 favicon이라고 부른다
+    link + Enter 
+    href는 경로 설정
+    요즘은 png(포토샵)파일이 아닌 svg파일을 많이 사용
+    벡터 방식이기 때문에 확대해도 잘 깨지지 않음-->
+    <link rel="shoutcut icon" href="./images/fv.svg">
+    <!-- link로 연결해주어야함 -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--가장 큰 컨테이너 역할이 wrap
+        #wrap+Enter #은 선택자의 역할
+        #wrap>header+section+footer의 역할
+        #wrap>header+section+footer 후 Enter-->
+    <div id="wrap">
+        <!-- header는 상단의 메뉴, 로고가 있는 영역(symantic tag) -->
+        <header>
+        <!--h1~h6 헤드라인 제목 태그
+            .은 class라는 표시(tag를 선택할지 class를 선택할지)
+            id는 layout을 잡을 때 쓰고 class는 세부요소를 잡을 때 씀
+            h1.logo+nav.menu + Enter-->
+        <h1 class="logo">
+            <!--a는 anchor의 약자
+                >는 밑에 딸려 있는 태그-->
+                <!-- a>img  -->
+            <a href="#"><img src="./images/logo.svg" alt="카이스트 로고"></a>
+        </h1>
+        <nav class="menu">
+            <!--ul은 목록태그
+                ul>li*5>a-->
+            <ul>
+            <!-- #은 임시링크(눌러지기만 함) -->
+                <li><a href="#">KAIST</a></li>
+                <li><a href="#">입학</a></li>
+                <li><a href="#">교육</a></li>
+                <li><a href="#">연구</a></li>
+                <li><a href="#">뉴스</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- section은 모든 contents가 들어가는 영역 -->
+    <section>
+        <h2>Darren Jeong</h2>
+        <!-- video + Enter -->
+        <video src="./movie/sub.mp4" autoplay loop playsinline muted></video>
+        <!-- <video src="./movie/sub.mp4" autoplay loop playsinline muted></video> -->
+        <!-- auto로 반복 재생 -->
+    </section>
+    <!-- footer는 하단의 주석 -->
+     <footer>
+        <p> Copyright(C) 2023, Korea Advanced Institute of Science and Technology, All Rights Reserved.</p>  
+    </footer>
+    </div>
+</body>
+</html>
